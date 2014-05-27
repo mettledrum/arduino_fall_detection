@@ -1,0 +1,14 @@
+#Fall Detection
+
+###Goal
+The goal of this project was to create the prototype of a wearable device for an elderly person that knows when he/she has fallen.
+
+###Summary
+This project combined my knowledge of the I2C connections, quaternions, Euler angles, ISRs, timers, and state diagrams to develop a "fall signature".  
+
+The *fall_code* file contains a bunch of *.ino* files that show my tinkerings with the MPU-9150 IMU with an Arduino Mini Pro.
+
+The *Report.pdf* contains the details of design.  The *installation.pdf* file describes how to connect the IMU and Arduino as well as install the libraries.
+
+####Note
+Among the libraries included are those by Panseti, LLC.  These generate the quaternion values from the accelerometer, gyroscope, and magnetometer voltage values.  This library was much better than that included in the Sparkfun GitHub.  (The yaw values were delayed too much.)
